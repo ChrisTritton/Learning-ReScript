@@ -2,6 +2,12 @@
 'use strict';
 
 
-console.log("Hello, Wor ld!");
+console.log(true);
 
+var x1 = true;
+
+var x = true;
+
+exports.x1 = x1;
+exports.x = x;
 /*  Not a pure module */
