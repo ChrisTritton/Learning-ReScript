@@ -8,6 +8,17 @@ var ageAndName = [
   56
 ];
 
+console.log(ageAndName);
+
+function getSomething(param) {
+  return [
+          "x",
+          "y"
+        ];
+}
+
+console.log(getSomething);
+
 var my3dCoordinates = [
   20.0,
   30.5,
@@ -16,4 +27,5 @@ var my3dCoordinates = [
 
 exports.ageAndName = ageAndName;
 exports.my3dCoordinates = my3dCoordinates;
-/* No side effect */
+exports.getSomething = getSomething;
+/*  Not a pure module */
