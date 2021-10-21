@@ -22,9 +22,15 @@ in the right place here.
 We won't be doing things quickly and moving on, we'll explore details and rehash examples in an inefficient way. 
 Messing around with the code and running it is basically what I was doing and what I encourage you to do. 
 
+So basically, this is the docs and examples from tutorials written out so that you can run them, hover over things 
+and see their types, plus if any rescript updated in future break them, we've be able to run the compiler, see 
+where they're broken and update them.. much better than an ageing video tutorial you can't interact with. 
+
+Also there's no way to learn coding better than uploading code that others will scrutinize - a good motivator.  
+
 ## Tips
 
-Split your terminal and have your dollar sign in the foler learning-rescript and the ReScript compiler running 
+Split your terminal and have your dollar sign in the folder `learning-rescript` and the ReScript compiler running 
 in the RHS window. 
 
 ## Installation
@@ -37,10 +43,10 @@ npm install
 
 - Build: `npm run build`
 - Clean: `npm run clean`
-- Build & watch: `npm run start`
+- Build & watch: `npm run start`  // do this is the RHS of your split terminal 
 
 ## Run
 
 ```sh
-node src/Demo.bs.js
+node src/TheFileYoureWorkingWith.bs.js   
 ```

@@ -26,23 +26,23 @@ Js.log(getFirstname(luke))
 // but basically we are accessing the field by reference to its name not its position, which is far less error-prone yo (much safier)  
 
 
-// you can keep your types in another file somewhere but then you need to tell compiler where to get them from like so: 
+// ------------ you can keep your types in another file somewhere -----------------
+
+//but then you need to tell compiler where to get them from like so: 
 
 // this me variable we've set to be type student and we've told the compiler where that custom type is located 
 let me: CustomTypes.student = {age: 28, name: "Chris"}
 
 Js.log(me)
 
-// ------------------------------------------------------------------------------------------------------
+// ----------------Pattern-Matching to Access Fields of A Record-------------------
 
-// Use Pattern-Matching / Destructuring to access fields of a record. Extract them by name and not position  
+// Extraction is done by name and not position, which is much better.   
 
 let { firstname , occupation } = luke // bind these two values from the fields of luke to variables of those names - cool 
 Js.log(occupation)
 
-// ------------------------------------------------------------------------------------------------------
-
-//// NESTED RECORDS ////
+// -----------------------------NESTED RECORDS-------------------------------------
 
 
 // first we define the types and we nest the parents type within the person type 
