@@ -1,6 +1,4 @@
-
 type student = {
   age: int,
-  name: string
+  name: string,
 }
-

@@ -1,4 +1,3 @@
-
 /*
 Tuples are composite values i.e. they're made up of two or more values 
 
@@ -17,15 +16,14 @@ Js.log(ageAndName)
 
 // ----------------------------------------------------
 
-// tupes are great for returning several values from a fn 
+// tupes are great for returning several values from a fn
 
 let getSomething = () => {
   let theXValue = "x"
   let theYVAlue = "y"
-  (theXValue, theYVAlue) 
-} 
+  (theXValue, theYVAlue)
+}
 
-Js.log(getSomething) // how to make this print out the tuple? 
-
+Js.log(getSomething) // how to make this print out the tuple?
 
 // the docs are actually probably better here, not such a big topic. 
