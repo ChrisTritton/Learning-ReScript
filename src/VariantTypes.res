@@ -46,11 +46,13 @@ Js.log2("output of someRandomField passed into toString: ", toString(someRandomF
 // ----------------------------A MORE COMPLEX EXAMPLE------------------------------
 
 /*
-We defined an animal type with two constructors and then made a fn that takes in two 
+We defined an animal variant type with two constructors and then made a fn that takes in two 
 arguments and the switch pattern-matches them according to the outcomes outlined.
 
 If you were to cover all scenarios with javascript if-elses it will be horrendous. And 
 the compiler will leave you in the dark about what you haven't covered. 
+
+With the _ , we are telling the compiler that we don't care what it is and that we want a match always. 
 */
 
 type animal =
@@ -68,5 +70,25 @@ let isBigger = (animalOne, animalTwo) =>
   | (Deer, Rabbit) => true
   | (Deer, _) => false
   | (Rabbit, Bear) => false
-  // what about the empty case ?
   }
+
+/*
+  Another feature of pattern matching with a switch is that the branches will always return the same type 
+  Because we have this assurance, we can make sure that states that are not supposed to happen, impossible. 
+
+  For instance, in the above switch, the only output you can get is a boolean, so we only need to write code that 
+  only ever handles booleans. 
+ */
+
+// -----------------------------------Another Example--------------------------------------
+
+let randomString = "There is no try."
+
+let origin = switch randomString {
+| "stringOne" => "Me"
+| "There is no try." => "Yoda"
+| "stringTwo" => "Me"
+| _ => "Unknown" // if no other inputs match, this catch-all one will always match - we're turning off the compilers exhaustivity check by including it, try not to use it unless you have too many possiblities to enumerate
+}
+
+Js.log(origin) // outputs: Yoda

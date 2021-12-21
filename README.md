@@ -63,7 +63,7 @@ npm install
 node src/TheFileYoureWorkingWith.bs.js   
 ```
 
-## Build in ReScript formatter 
+## Built-in ReScript formatter 
 
 ```sh
 rescript format -all

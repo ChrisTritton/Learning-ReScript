@@ -39,10 +39,30 @@ function isBigger(animalOne, animalTwo) {
   }
 }
 
+var randomString = "There is no try.";
+
+var origin;
+
+switch (randomString) {
+  case "There is no try." :
+      origin = "Yoda";
+      break;
+  case "stringOne" :
+  case "stringTwo" :
+      origin = "Me";
+      break;
+  default:
+    origin = "Unknown";
+}
+
+console.log(origin);
+
 var nextTurn = /* Cross */0;
 
 exports.nextTurn = nextTurn;
 exports.toString = toString;
 exports.someRandomField = someRandomField;
 exports.isBigger = isBigger;
+exports.randomString = randomString;
+exports.origin = origin;
 /*  Not a pure module */

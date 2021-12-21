@@ -14,9 +14,8 @@ let arr = ["hello", "world", "how are you?"] // this array is of type 'array<str
 
 // we can also define the type of an array beforehand, unlike with records, we don't specify how many elems in the array (dynamic arrays)
 
-type person = array<string>
-
-let chris: person = ["Chris", "Tritton", "Coder"] // we've used our person type to constrain the type of the chris identifier
+type collectionOfWords = array<string>
+let words: collectionOfWords = ["word1", "word2", "word3"] // we've used our person type to constrain the type of the chris identifier
 
 // ----------------Using a fn to Create An Array---------------------
 
@@ -30,10 +29,12 @@ and returns an array of the polymorphic type alpha.
 Array
 */
 
-Js.log(createArray(42, "pssh"))
+Js.log(words)
+Js.log(arr)
+
+//Js.log(createArray(42, "pssh"))
 
 // ---------------Accessing Elements of An Array Using Pattern-Matching ------------------
 
-let [tritton, coder, chris] = chris // here we are extracting according to the positions. We're making 3 new let bindings from the contents of the array chris and calling them these names
-
-Js.log(tritton ++ coder ++ chris) // outputs ChrisTrittonCoder
+let [word1, word2, word3] = words // here we are extracting according to the positions. We're making 3 new let bindings from the contents of the array chris and calling them these names
+Js.log(word1 ++ word2 ++ word3) // outputs ChrisTrittonCoder

@@ -9,39 +9,42 @@ var arr = [
   "how are you?"
 ];
 
-var chris = [
-  "Chris",
-  "Tritton",
-  "Coder"
+var words = [
+  "word1",
+  "word2",
+  "word3"
 ];
 
 var createArray = Caml_array.make;
 
-console.log(Caml_array.make(42, "pssh"));
+console.log(words);
 
-if (chris.length !== 3) {
+console.log(arr);
+
+if (words.length !== 3) {
   throw {
         RE_EXN_ID: "Match_failure",
         _1: [
           "Arrays.res",
-          37,
+          39,
           4
         ],
         Error: new Error()
       };
 }
 
-var tritton = chris[0];
+var word1 = words[0];
 
-var coder = chris[1];
+var word2 = words[1];
 
-var chris$1 = chris[2];
+var word3 = words[2];
 
-console.log(tritton + coder + chris$1);
+console.log(word1 + word2 + word3);
 
 exports.arr = arr;
+exports.words = words;
 exports.createArray = createArray;
-exports.tritton = tritton;
-exports.coder = coder;
-exports.chris = chris$1;
+exports.word1 = word1;
+exports.word2 = word2;
+exports.word3 = word3;
 /*  Not a pure module */
