@@ -14,11 +14,6 @@ Js.log2("output of ans2:", ans2) // outputs 89
 
 // can also be written:
 
-let ans3 = 
-  4
-  ->add
-  ->multiply
-  ->subtract
+let ans3 = 4->add->multiply->subtract
 
 Js.log2("output of ans3:", ans3)
-

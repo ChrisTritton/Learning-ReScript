@@ -32,9 +32,11 @@ Array
 Js.log(words)
 Js.log(arr)
 
-//Js.log(createArray(42, "pssh"))
+let arrayOfFortyTwo = createArray(45, "elem")
+
+Js.log(arrayOfFortyTwo)
 
 // ---------------Accessing Elements of An Array Using Pattern-Matching ------------------
 
 let [word1, word2, word3] = words // here we are extracting according to the positions. We're making 3 new let bindings from the contents of the array chris and calling them these names
-Js.log(word1 ++ word2 ++ word3) // outputs ChrisTrittonCoder
+Js.log(word1 ++ word2) // outputs ChrisTrittonCoder

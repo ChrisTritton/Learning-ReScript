@@ -10,6 +10,10 @@ for(var i = 8; i >= 0; --i){
   console.log(i);
 }
 
+for(var i$1 = 0; i$1 <= 100; ++i$1){
+  console.log("still not there yet...", i$1);
+}
+
 var $$break = {
   contents: false
 };

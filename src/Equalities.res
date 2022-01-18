@@ -1,5 +1,5 @@
 /*
-There are two types of qualities in ReScript
+There are two types of equalities in ReScript
 
 Structural:
   - two things are structurally equal if they have the same content 

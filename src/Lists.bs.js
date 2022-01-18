@@ -26,6 +26,8 @@ var newMyList = {
   tl: newMyList_1
 };
 
+console.log(myList);
+
 exports.myList = myList;
 exports.newMyList = newMyList;
-/* No side effect */
+/*  Not a pure module */
