@@ -1,5 +1,25 @@
 # Learning ReScript 
 
+Hi, even though highly-commented code is an eyesore and super 
+rookie feeling, This codebase will be in super-verbose mode. 
+Meaning that there will be multiple lines of comments that 
+use the proper terms for the language features. This helps 
+cement the concepts into your head. For you, if you're a rescipt 
+pro already it will seem very unnecessary, however if you're new 
+to typed languages and functional programming, it will fast-track 
+your understanding. So there. 
+
+Yes you can read the docs, however if you are new to typed languages, or 
+if you need an answer to a more complicated scenario, then there is, at 
+the moment not a wealth of tutorials out there that can help. 
+
+This is a repository of examples/explanations of things that maybe 
+aren't covered in the docs or tuts out there. 
+
+The point of this is so that I can look back here easily and see 
+how I did things in the past. 
+
+
 * Please make pull requests to add more examples to this repo if you wish. If you're a beginner then add your
   example to the beginning of the .res file concerned, and if it's an advanced example, add it to the bottom. 
   Would be super cool to create an open-source heap of examples for everyone to play with. 
